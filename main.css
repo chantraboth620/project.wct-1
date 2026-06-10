@@ -1,0 +1,88 @@
+.main{
+    width: 100%;
+    height: auto;
+}
+.clothing {
+  background-color: black;
+  margin: 0;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* មួយជួរមាន ៣ អាវ */
+  gap: 30px;
+  width: 100%;
+  max-width: 1200px;
+  box-sizing: border-box;
+}
+
+
+.product-card {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.product-image-container {
+  position: relative;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 10px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.product-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  transition: opacity 0.4s ease; 
+}
+
+.product-image.hover-img {
+  position: absolute; 
+  top: 30px; 
+  opacity: 0;
+}
+
+.product-card:hover .default-img {
+  opacity: 0; 
+}
+
+.product-card:hover .hover-img {
+  opacity: 1; 
+}
+
+.product-info {
+  padding: 15px 5px;
+  text-align: center;
+  margin-top: auto;
+  box-sizing: border-box;
+}
+
+.product-title {
+  display: inline-block;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 15px;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+
+.product-price {
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 15px;
+  letter-spacing: 1px;
+}

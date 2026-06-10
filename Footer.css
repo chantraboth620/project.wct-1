@@ -1,0 +1,61 @@
+.foonter{
+  width: 100%;
+  height: 300px;
+  background-color: black;
+}
+.text {
+ font-size: 24px;
+  font-family: 'Times New Roman', Times, serif;
+}
+.jong{
+ color: darkgray;
+}
+.gmail {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.email-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 500px;
+  border: 1px solid white; 
+  padding: 14px 18px;
+  background-color: black; 
+  box-sizing: border-box;
+}
+
+.email-field {
+  flex: 1;
+  background: transparent; 
+  border: none;
+  color: white; 
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 18px;
+  outline: none;
+}
+
+.email-field::placeholder {
+  color:gray; 
+  opacity: 1;
+}
+
+.arrow-submit {
+  background: transparent; 
+  border: none;
+  color: gray; 
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.arrow-submit:hover {
+  color: white; 
+  transform: translateX(2px);
+}
